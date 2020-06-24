@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed:300|Unica+One" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Sihirli kare</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="jumbotron">
+        <img src="img/magic-square-2.jpg" alt="Making a magic square" />
+        <h1>3X3 </h1>
+        <h2>12 12 12 </h2>
+      </header>
+      <div class="container main">
+        <img src="img/numbers-transparent.png" alt="floating numbers" />
+        <div id="rules">
+          <h3>Kural</h3>
+          <hr></hr>
+          <ul>
+            <li>0 1 2 3 4 5 6 7 8  rakamlarını 1 defa kullanarak yukarıdan aşağı ve sağdan sola toplamları 12 olsun.</li>
+			<li> 8 ve 7 bizden onlarıda kontrol edin.</li>
+            <li>Rakamlar tekrarlamasın.</li>
+            <li> <code>Enter</code> Her girişten sonra</li>
+            <li>Yanlış girişler <span id="red">kırmızı</span></li>
+            <li>Doğru girişler <span id="green">yeşil</span></li>
+          </ul>
+        </div> <!-- rules closing -->
+        <table id="square">
+          <thead>
+          </thead>
+          <tbody>
+            <tr id="row1">
+              <td id="cell1">
+                <form id="form1">
+                  <input type="text" name="box" id="text1">
+                </form>
+              </td>
+              <td id="cell2">
+                <form id="form2">
+                  <input type="text" name="box" id="text2" placeholder="8">
+                </form>
+              </td>
+              <td id="cell3">
+                <form id="form3">
+                  <input type="text" name="box" id="text3">
+                </form>
+              </td>
+            </tr>
+            <tr id="row2">
+              <td id="cell4">
+                <form id="form4">
+                  <input type="text" name="box" id="text4">
+                </form>
+              </td>
+              <td id="cell5">
+                <form id="form5">
+                  <input type="text" name="box" id="text5">
+                </form>
+              </td>
+              <td id="cell6">
+                <form id="form6">
+                  <input type="text" name="box" id="text6">
+                </form>
+              </td>
+            </tr>
+            <tr id="row3">
+              <td id="cell7">
+                <form id="form7">
+                  <input type="text" name="box" id="text7">
+                </form>
+              </td>
+              <td id="cell8">
+                <form id="form8">
+                  <input type="text" name="box" id="text8">
+                </form>
+              </td>
+              <td id="cell9">
+                <form id="form9">
+                  <input type="text" name="box" id="text9" placeholder="7">
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="well-container">
+          <div class="well">
+            <h2 id="win-message">
+
+            </h2>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ae6c8bb7-9254-47b1-9de2-e00f011e15b9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  </body>
+</html>
